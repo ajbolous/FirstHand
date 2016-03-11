@@ -36,7 +36,7 @@ namespace WindowsFormsApplication6
 
             aTimer = new System.Timers.Timer(500);
             mySerialPort.BaudRate = 9600;
-            simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
+            simpleSound = new SoundPlayer(@"c:\Windows\Media\ding.wav");
 
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
@@ -56,14 +56,14 @@ namespace WindowsFormsApplication6
             string indata = mySerialPort.ReadLine();
           int x = int.Parse(indata);
             if (x == -1)
-                x = 10;
-            if (x < 20)
+                x = 5;
+            if (x <= 15)
             {
-                aTimer.Interval = 50 * x;
+                aTimer.Interval = 50* x;
                 aTimer.Start();
             }
                 
-            if (x > 20)
+            if (x > 15)
                 aTimer.Stop();
                 this.Invoke((MethodInvoker)delegate
             {
