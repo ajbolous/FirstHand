@@ -49,7 +49,7 @@ namespace WindowsFormsApplication6
         {
           string indata = mySerialPort.ReadLine();
           int distance = int.Parse(indata);
-            //bolosnew comment
+            
             if (distance == -1)
                 distance = 10;
             if (distance < 20)
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication6
                 aTimer.Interval = 50 * distance;
                 aTimer.Start();
             }
-                ///ahdab we wiiiiiin
+                
             if (distance > 20)
                 aTimer.Stop();
 
