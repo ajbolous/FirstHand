@@ -57,7 +57,7 @@ namespace WindowsFormsApplication6
                 aTimer.Interval = 50 * distance;
                 aTimer.Start();
             }
-                ///ahdab
+                ///ahdab we wiiiiiin
             if (distance > 20)
                 aTimer.Stop();
 
