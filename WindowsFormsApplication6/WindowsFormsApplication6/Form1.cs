@@ -15,7 +15,7 @@ namespace WindowsFormsApplication6
 {
     public partial class Form1 : Form
     {
-        private static System.Timers.Timer aTimer;
+        private  System.Timers.Timer aTimer;
         public SoundPlayer simpleSound;
         SerialPort mySerialPort = new SerialPort("COM3");
 
@@ -34,7 +34,7 @@ namespace WindowsFormsApplication6
         private void button1_Click(object sender, EventArgs e)
         {
 
-            aTimer = new System.Timers.Timer(5);
+            aTimer = new System.Timers.Timer(500);
             mySerialPort.BaudRate = 9600;
             simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
 
@@ -42,7 +42,7 @@ namespace WindowsFormsApplication6
 
             mySerialPort.Open();
 
-
+            aTimer.Elapsed += ATimer_Elapsed;
 
         }
 
@@ -50,16 +50,20 @@ namespace WindowsFormsApplication6
                             object sender,
                             SerialDataReceivedEventArgs e)
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
-            int x;
-
-
-            aTimer.Elapsed += ATimer_Elapsed;
+           
+            
+            
             string indata = mySerialPort.ReadLine();
-            x = int.Parse(indata);
+          int x = int.Parse(indata);
+            if (x == -1)
+                x = 10;
             if (x < 20)
-                simpleSound.Play();
-            this.Invoke((MethodInvoker)delegate
+                aTimer.Interval = 50 * x;
+                aTimer.Start();
+                
+            if (x > 20)
+                aTimer.Stop();
+                this.Invoke((MethodInvoker)delegate
             {
                 listBox1.Items.Add(indata);
             });
@@ -68,7 +72,8 @@ namespace WindowsFormsApplication6
 
         private void ATimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-
+            
+                simpleSound.Play();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
