@@ -15,11 +15,11 @@ namespace WindowsFormsApplication6
 {
     public partial class Form1 : Form
     {
-       private static System.Timers.Timer aTimer;
-       
+        private static System.Timers.Timer aTimer;
+        public SoundPlayer simpleSound;
         SerialPort mySerialPort = new SerialPort("COM3");
-        
-       
+
+
         public Form1()
         {
 
@@ -33,17 +33,17 @@ namespace WindowsFormsApplication6
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
 
+            aTimer = new System.Timers.Timer(5);
             mySerialPort.BaudRate = 9600;
-           // SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
+            simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
 
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
-            mySerialPort.Open(); 
-             
-            //simpleSound.Play(); 
-            
+            mySerialPort.Open();
+
+
+
         }
 
         private void DataReceivedHandler(
@@ -52,17 +52,22 @@ namespace WindowsFormsApplication6
         {
             SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
             int x;
-            
-            aTimer = new System.Timers.Timer(5);
-            aTimer.Elapsed += OnTimedEvent;//to do
+
+
+            aTimer.Elapsed += ATimer_Elapsed;
             string indata = mySerialPort.ReadLine();
             x = int.Parse(indata);
-            if (x<20)
+            if (x < 20)
                 simpleSound.Play();
             this.Invoke((MethodInvoker)delegate
             {
                 listBox1.Items.Add(indata);
             });
+
+        }
+
+        private void ATimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
 
         }
 
@@ -76,7 +81,7 @@ namespace WindowsFormsApplication6
             mySerialPort.Close();
 
         }
-       
-        }
-    
+
+    }
+
 }
