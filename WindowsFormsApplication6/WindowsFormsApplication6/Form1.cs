@@ -15,14 +15,14 @@ namespace WindowsFormsApplication6
 {
     public partial class Form1 : Form
     {
+        //Here we declare the variables we are going to use
         private  System.Timers.Timer aTimer;
         public SoundPlayer simpleSound;
-        SerialPort mySerialPort = new SerialPort("COM3");
+        SerialPort mySerialPort;
 
-
+        //Constructors
         public Form1()
         {
-
             InitializeComponent();
         }
 
@@ -33,39 +33,35 @@ namespace WindowsFormsApplication6
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //Allocate new OBJECTS , using new
             aTimer = new System.Timers.Timer(500);
-            mySerialPort.BaudRate = 9600;
+            mySerialPort = new SerialPort("COM3",9600);
             simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
-
+            //Attach handlers to events
             mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-
-            mySerialPort.Open();
-
             aTimer.Elapsed += ATimer_Elapsed;
+            //Start serialport and reading data
+            mySerialPort.Open();
 
         }
 
-        private void DataReceivedHandler(
-                            object sender,
-                            SerialDataReceivedEventArgs e)
+        private void DataReceivedHandler(object sender,SerialDataReceivedEventArgs e)
         {
-           
-            
-            
-            string indata = mySerialPort.ReadLine();
-          int x = int.Parse(indata);
-            if (x == -1)
+          string indata = mySerialPort.ReadLine();
+          int distance = int.Parse(indata);
+
+            if (distance == -1)
                 x = 10;
-            if (x < 20)
+            if (distance < 20)
             {
-                aTimer.Interval = 50 * x;
+                aTimer.Interval = 50 * distance;
                 aTimer.Start();
             }
                 
-            if (x > 20)
+            if (distance > 20)
                 aTimer.Stop();
-                this.Invoke((MethodInvoker)delegate
+
+            this.Invoke((MethodInvoker)delegate
             {
                 listBox1.Items.Add(indata);
             });
@@ -74,7 +70,6 @@ namespace WindowsFormsApplication6
 
         private void ATimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            
                 simpleSound.Play();
         }
 
