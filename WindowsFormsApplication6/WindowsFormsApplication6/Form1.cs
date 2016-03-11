@@ -51,7 +51,7 @@ namespace WindowsFormsApplication6
           int distance = int.Parse(indata);
 
             if (distance == -1)
-                x = 10;
+                distance = 10;
             if (distance < 20)
             {
                 aTimer.Interval = 50 * distance;
