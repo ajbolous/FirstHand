@@ -49,7 +49,7 @@ namespace WindowsFormsApplication6
         {
           string indata = mySerialPort.ReadLine();
           int distance = int.Parse(indata);
-
+            //bolosnew comment
             if (distance == -1)
                 distance = 10;
             if (distance < 20)
