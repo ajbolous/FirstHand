@@ -33,6 +33,10 @@ namespace WindowsFormsApplication6
                 distance = dist;
 
             }
+            if(dist<20)
+            {
+                
+            }
 
           }
 

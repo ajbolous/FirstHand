@@ -28,7 +28,6 @@ namespace WindowsFormsApplication6
         
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,7 +43,7 @@ namespace WindowsFormsApplication6
             mySerialPort.Open();
 
         }
-
+     
         private void DataReceivedHandler(object sender,SerialDataReceivedEventArgs e)
         {
           string indata = mySerialPort.ReadLine();
