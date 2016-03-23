@@ -12,10 +12,4 @@ class SerialConnection(object):
         self._serial.close()
 
     def send(self, data):
-        self._serial.write(data)
-
-    def create_packet(self,angles):
-        data = [0,0,angles[0],angles[1],angles[2],angles[3],0,0]
-        data=bytearray(data)
-        return str(data)
-
+        pass

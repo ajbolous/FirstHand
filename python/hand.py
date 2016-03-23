@@ -4,7 +4,12 @@ class Hand(object):
     def __init__(self):
         self._axis = []
         self._serial = SerialConnection()
+        self._serial.connect('com1', 9600)
 
-    def moveAxis(self, axis_id, angle):
-        self._axis[axis_id].angle = angle
-        self._serial.send(self._axis)
+    def move(self, angles):
+        for axis,angle in self._axis,angles:
+            if angle<1:
+                axis =1
+            axis.angle = angle
+        packet = self._serial.create_packet(angles)
+        self._serial.send(packet)
