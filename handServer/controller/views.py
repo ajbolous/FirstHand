@@ -1,6 +1,7 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 from FirstHand.python.hand import Hand
+from django.http import HttpResponse
+
+
 # Create your views here.
 
 def move(request):
