@@ -18,7 +18,7 @@ int count = 0;
 void loop()
 {
   if (Serial.available()) {
-    c = Serial.read()
+    c = Serial.read();
         if (c == 0)
           count++;
 
@@ -26,7 +26,9 @@ void loop()
       for (int i = 0; i < 4; i++) {
         c = Serial.read();
         servos[i].write(c);
+        Serial.println("got angle : " + String(c));
       }
+      count=0;
     }
   }
 }
