@@ -9,18 +9,18 @@ int i=0;
 void setup() 
 { 
   for(i=0;i<4;i++)
-    servos[i].attach(i+6);  // attaches the servo on pin 9 to the servo object 
+    servos[i].attach(i+2);  // attaches the servo on pin 9 to the servo object 
 } 
  
 void loop() 
 { 
   pos+=delta;
-  if(pos>120) delta=-1;
-  else if(pos<60) delta=1;
+  if(pos>160) delta=-1;
+  else if(pos<30) delta=1;
   
 
    for(i=0;i<4;i++)
     servos[i].write(pos);
-    delay(50);
+    delay(20);
 } 
 
