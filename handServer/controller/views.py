@@ -1,6 +1,5 @@
-from FirstHand.python.hand import Hand
+from hand import Hand
 from django.http import HttpResponse
-
 
 # Create your views here.
 
