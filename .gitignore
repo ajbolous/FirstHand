@@ -13,6 +13,7 @@
 *.pyc
 __pycache__/
 .idea/
+.idea/*
 
 # Build results
 [Dd]ebug/
