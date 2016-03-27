@@ -1,5 +1,5 @@
 from handControl.axis import Axis
-from handControl.serial_connection import SerialConnection
+from handControl.communication.serial_connection import SerialConnection
 
 
 class Hand(object):
@@ -21,4 +21,4 @@ class Hand(object):
         self._axis[axis].set_angle(angle)
         self.move([axis._angle for axis in self._axis])
 
-hand = Hand('/dev/ttyACM1')
+hand = Hand('/dev/ttyACM0')

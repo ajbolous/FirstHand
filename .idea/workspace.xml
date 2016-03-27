@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/controller/handControl/serial_connection.py" line="27" />
+    <bookmark url="file://$PROJECT_DIR$/controller/handControl/communication/serial_connection.py" line="27" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db11b32c-5234-4869-b8c3-6ff84bfbe049" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/handControl/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controller/test.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/axis.py" afterPath="$PROJECT_DIR$/controller/handControl/axis.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/geometry.py" afterPath="$PROJECT_DIR$/controller/handControl/geometry.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/hand.py" afterPath="$PROJECT_DIR$/controller/handControl/hand.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/point.py" afterPath="$PROJECT_DIR$/controller/handControl/point.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/serial_connection.py" afterPath="$PROJECT_DIR$/controller/handControl/serial_connection.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/vector.py" afterPath="$PROJECT_DIR$/controller/handControl/vector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/handControl/geometry/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handServer/api/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/handServer/api/migrations/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/handControl/geometry.py" afterPath="$PROJECT_DIR$/controller/handControl/geometry/geometry.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/handControl/point.py" afterPath="$PROJECT_DIR$/controller/handControl/geometry/point.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/handControl/serial_connection.py" afterPath="$PROJECT_DIR$/controller/handControl/communication/serial_connection.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/handControl/vector.py" afterPath="$PROJECT_DIR$/controller/handControl/geometry/vector.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/__init__.py" afterPath="$PROJECT_DIR$/controller/handControl/communication/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/admin.py" afterPath="$PROJECT_DIR$/handServer/api/admin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/apps.py" afterPath="$PROJECT_DIR$/handServer/api/apps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/migrations/__init__.py" afterPath="$PROJECT_DIR$/controller/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/models.py" afterPath="$PROJECT_DIR$/handServer/api/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/tests.py" afterPath="$PROJECT_DIR$/handServer/api/tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/handServer/controller/views.py" afterPath="$PROJECT_DIR$/handServer/api/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handServer/controller/views.py" afterPath="$PROJECT_DIR$/handServer/controller/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/handControl/hand.py" afterPath="$PROJECT_DIR$/controller/handControl/hand.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handServer/handServer/urls.py" afterPath="$PROJECT_DIR$/handServer/handServer/urls.py" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +45,7 @@
       <file leaf-file-name="hand.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/handControl/hand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="591">
               <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -48,21 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geometry.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/handControl/geometry.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/handServer/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handServer/controller/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="162">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -70,11 +66,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="point.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/handControl/point.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handServer/handServer/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="537">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="e#643#675#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handServer/api/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handServer/api/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handServer/api/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,24 +138,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serial_connection.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/handControl/serial_connection.py">
+      <file leaf-file-name="serial_connection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/handControl/communication/serial_connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="591">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vector.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/handControl/vector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -151,15 +179,18 @@
         <option value="$PROJECT_DIR$/controller/hand.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/controller/__init__.py" />
-        <option value="$PROJECT_DIR$/controller/handControl/hand.py" />
         <option value="$PROJECT_DIR$/handServer/controller/views.py" />
+        <option value="$PROJECT_DIR$/controller/handControl/hand.py" />
+        <option value="$PROJECT_DIR$/handServer/handServer/urls.py" />
+        <option value="$PROJECT_DIR$/handServer/api/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1680" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="2465" />
+    <option name="y" value="194" />
+    <option name="width" value="1234" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -186,8 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,6 +281,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstHand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstHand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -274,8 +317,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstHand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstHand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="communication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,12 +351,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/controller/handControl" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="E:\FirstHand\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controller/handControl/communication" />
+      <recent name="$PROJECT_DIR$/controller/handControl/geometry" />
+      <recent name="$PROJECT_DIR$/controller/handControl" />
     </key>
   </component>
   <component name="RunManager" selected="Python.hand">
@@ -305,7 +374,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller/handControl/point.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller/handControl/geometry/point.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -339,7 +408,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller/handControl/vector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller/handControl/geometry/vector.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -567,12 +636,13 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="2465" y="194" width="1234" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.080729164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1936791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10887949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -585,7 +655,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23671497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5729387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -612,18 +681,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/handControl/serial_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/test.py" />
-    <entry file="file://$PROJECT_DIR$/controller/handControl/vector.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/vector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="44" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="44" />
@@ -641,7 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/geometry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -649,7 +707,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/point.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/point.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
@@ -666,7 +724,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/controller/handControl/serial_connection.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/communication/serial_connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="25" />
@@ -677,7 +735,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/test.py" />
-    <entry file="file://$PROJECT_DIR$/controller/handControl/vector.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/vector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
@@ -707,14 +765,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/tests.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/views.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -728,28 +786,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/apps.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/models.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/tests.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/views.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -763,21 +821,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/apps.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/models.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/tests.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -798,42 +856,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/views.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/apps.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/models.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/tests.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/models.py">
+    <entry file="file://$PROJECT_DIR$/handServer/api/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -861,20 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/handServer/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firmware/servoControl/servoControl.ino">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -885,19 +922,37 @@
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/controller/__init__.py" />
     <entry file="file://$PROJECT_DIR$/controller/test.py" />
-    <entry file="file://$PROJECT_DIR$/controller/handControl/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/geometry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/handControl/geometry/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/handControl/hand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,48 +964,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handServer/controller/views.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/hand.py">
+    <entry file="file://$PROJECT_DIR$/controller/handControl/communication/serial_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/point.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/handControl/serial_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="591">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/api/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/handServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#643#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/api/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handServer/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

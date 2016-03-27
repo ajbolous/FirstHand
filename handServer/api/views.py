@@ -1,7 +1,7 @@
 from django.http import HttpResponse
-from handControl.hand import  *
+import handControl.hand
 # Create your views here.
 
 def move(request):
-    hand.move([120,120,100,200])
+    handControl.hand.hand.move([120,120,100,150])
     return HttpResponse('you requested me ')
