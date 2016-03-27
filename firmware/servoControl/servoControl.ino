@@ -6,6 +6,9 @@ Servo servos[4];
 int pos = 0;    // variable to store the servo position
 int delta = 1;
 int i = 0;
+byte c;
+int count = 0;
+byte buff[8] = {100, 100, 100, 100, 100, 100, 100, 100};
 
 void setup()
 {
@@ -13,22 +16,20 @@ void setup()
   for (i = 0; i < 4; i++)
     servos[i].attach(i + 2); // attaches the servo on pin 9 to the servo object
 }
-char c;
-int count = 0;
+
 void loop()
 {
   if (Serial.available()) {
     c = Serial.read();
-        if (c == 0)
-          count++;
-
-    if (count == 2) {
-      for (int i = 0; i < 4; i++) {
-        c = Serial.read();
-        servos[i].write(c);
-        Serial.println("got angle : " + String(c));
+    for (i = 0; i < 7; i++) {
+      buff[i] = buff[i + 1];
+    }
+    buff[7] = c;
+    if (buff[0] == 200 && buff[1] == 200 && buff[6] == 200 && buff[7] == 200) {
+      Serial.println("got " + String(buff[2]) + "," +  String(buff[3]) + "," +  String(buff[4]) + "," +  String(buff[5]));
+      for (i = 0; i < 4; i++) {
+        servos[i].write(buff[2 + i]);
       }
-      count=0;
     }
   }
 }

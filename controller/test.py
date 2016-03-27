@@ -1,7 +1,5 @@
-from hand import Hand
 from vector import Vector
 from point import Point
-from Geometry  import Geometry
 #h = Hand()
 #h.move([134,123,34,34])
 #for i in range (0,4):
@@ -19,5 +17,4 @@ v2=Vector(p3,p4)
 #print(p1+p2)
 #print(v1._head+v2._tail)
 print(v1+v2)
-g=Geometry(v1)
-print(g._distance(v1))
+print(v1._len)

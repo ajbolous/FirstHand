@@ -1,18 +1,16 @@
 class Point(object):
-    def __init__(self,x,y,z):
-       self._x = x
-       self._y = y
-       self._z = z
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
 
-
-    def __add__(self,other):
-        p = Point(self._x + other._x, self._y + other._y , self._z + other._z)
+    def __add__(self, other):
+        p = Point(self.x + other.x, self.y + other.y, self.z + other.z)
         return p
-    def __sub__(self,other):
-        q = Point(self._x - other._x, self._y - other._y , self._z - other._z)
+
+    def __sub__(self, other):
+        q = Point(self.x - other.x, self.y - other.y, self.z - other.z)
         return q
 
-
     def __str__(self):
-        return "point <{} , {} , {}>".format(self._x,self._y , self._z)
-
+        return "point <{} , {} , {}>".format(self.x, self.y, self.z)
