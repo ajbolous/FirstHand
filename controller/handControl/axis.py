@@ -4,3 +4,7 @@ class Axis(object):
 
     def set_angle(self,angle):
         self._angle=angle
+
+    @property
+    def angle(self):
+        return self._angle
