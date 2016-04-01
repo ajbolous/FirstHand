@@ -26,7 +26,11 @@ class Hand(object):
         self._move()
 
     def move_axis(self, axis, angle):
+        if angle>180:
+            angle=180
+        if angle<1:
+            angle =0
         self._axis[axis].set_angle(angle)
         self.move([axis._angle for axis in self._axis])
 
-hand = Hand('/dev/ttyACM0')
+hand = Hand('/dev/cu.usbmodem1411')
