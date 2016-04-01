@@ -13,9 +13,6 @@ class Hand(object):
         self._serial = SerialConnection()
         self._serial.connect(port, 9600)
 
-        time.sleep(1)
-        self._serial._start_reading()
-
     def _move(self):
         packet = self._serial.create_packet(self._axis)
         self._serial.write(packet)

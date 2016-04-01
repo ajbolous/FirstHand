@@ -25,10 +25,10 @@ class SerialConnection(object):
             self._serial.write(chr(d))
 
     def create_packet(self,axis):
-        data = [200, 200,
+        data = [200,
                 axis[0].angle,
                 axis[1].angle,
                 axis[2].angle,
                 axis[3].angle,
-                200,200]
+                200]
         return data
