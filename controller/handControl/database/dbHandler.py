@@ -20,4 +20,4 @@ class DbHandler(object):
         self._session.commit()
 
     def create_tables(self):
-        Base.metadata.ccreate_all(self._engine)
+        Base.metadata.create_all(self._engine)

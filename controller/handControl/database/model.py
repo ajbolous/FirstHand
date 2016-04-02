@@ -20,4 +20,3 @@ class Vertex(Base):
 
     def __repr__(self):
         return "Vertex[{}]({},{},{},{})".format(self.id,self.x,self.y,self.z,self.o)
-
